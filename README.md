@@ -55,7 +55,7 @@ CTCAACTCAGTTCCACCAGGCTCTGTTGGATCCGAGGGTAAGGGCTCTGTATTTTCCTGC
 CTCAACTCAGTTCCACCAGGCTCTGTTGGATCCGAGGGTAAGGGCTCTGTATTTTCCTGC 
 ```
 
-* CSV :  Contains the classes associated with each sequence. Example :
+* CSV : Contiene las clases asociadas con cada secuencia. Ejemplo:
 ```sh
 id_sequence_1,class_sequence_1																 
 id_sequence_2,class_sequence_2																		 
@@ -78,6 +78,6 @@ id_sequence_n,class_sequence_n
 * Prediction.csv: Archivo de resultados de la predicción de secuencias genómicas desconocidas sin evaluación
 * Prediction_Evaluation.csv: Archivo de resultados de la predicción de secuencias genómicas desconocidas con evaluación
 
-### Reference to cite CASTOR-KRFE
+### Referencia para citar CASTOR-KRFE
 * [Lebatteux, D., Remita, A. M., & Diallo, A. B. (2019). Toward an alignment-free method for feature extraction and accurate classification of viral sequences. Journal of Computational Biology, 26(6), 519-535.](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0239)
                                                                                    
