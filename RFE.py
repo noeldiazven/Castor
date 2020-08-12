@@ -52,7 +52,7 @@ class RFE(SelectorMixin, MetaEstimatorMixin, BaseEstimator):
 		tags = self._get_tags()
 		X, y = self._validate_data(X, y, accept_sparse="csc",ensure_min_features=2, force_all_finite=not tags.get('allow_nan', True),multi_output=True)
 
-		# Initialization
+		# Inicialización
 		n_features = X.shape[1]
 		if self.n_features_to_select is None: n_features_to_select = n_features // 2
 		else: n_features_to_select = self.n_features_to_select
@@ -66,53 +66,53 @@ class RFE(SelectorMixin, MetaEstimatorMixin, BaseEstimator):
 
 		if step_score: self.scores_ = []
 
-		# Elimination
+		# Eliminación
 		while np.sum(support_) > n_features_to_select:
-			# Remaining features
+			# Features restantes
 			features = np.arange(n_features)[support_]
 
-			# Rank the remaining features
+			# Clasifique las características restantes
 			estimator = clone(self.estimator)
 			if self.verbose > 0: print("Fitting estimator with %d features." % np.sum(support_))
 
-			# Fit
+			# Ajuste
 			estimator.fit(X[:, features], y)
 
-         # Get coefs
+         # Obtener coefs
 			if hasattr(estimator, 'coef_'): coefs = estimator.coef_
 			else: coefs = getattr(estimator, 'feature_importances_', None)
 			if coefs is None: raise RuntimeError("The classifier does not expose coef_or feature_importances_attributes")
 
-			# Get ranks
+			# Obtener rangos
 			if coefs.ndim > 1: ranks = np.argsort(safe_sqr(coefs).sum(axis=0))
 			else: ranks = np.argsort(safe_sqr(coefs))
 
-			# For sparse case ranks is matrix
+			# Para rangos de casos dispersos es matriz
 			ranks = np.ravel(ranks)
 
-			# Eliminate the worse features
+			# Elimina las peores características
 			threshold = min(step, np.sum(support_) - n_features_to_select)
 
-			# Save support of selected features
+			# Guardar soporte de características seleccionadas
 			self.supports.append(list(support_))
 
-			# Compute step score on the previous selection iteration because 'estimator' must use features that have not been eliminated yet
+			# Calcule el puntaje de paso en la iteración de selección anterior porque el 'estimador' debe usar características que aún no se han eliminado
 			if step_score: self.scores_.append(step_score(estimator, features))
 			support_[features[ranks][:threshold]] = False
 			ranking_[np.logical_not(support_)] += 1
 		
-		# Set final attributes
+		# Establecer atributos finales
 		features = np.arange(n_features)[support_]
 		self.estimator_ = clone(self.estimator)
 		self.estimator_.fit(X[:, features], y)
 
-		# Compute step score when only n_features_to_select features left
+		# Calcule la puntuación por pasos cuando solo quedan n características para seleccionar características
 		if step_score: self.scores_.append(step_score(self.estimator_, features))
 		self.n_features_ = support_.sum()
 		self.support_ = support_
 		self.ranking_ = ranking_
 
-		# Save support of selected features
+		# Guardar soporte de características seleccionadas
 		self.supports.append(list(support_))
 
 		return self
