@@ -10,103 +10,103 @@ from sklearn.feature_selection import RFE
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_predict
 
-# Function core of feature extraction
+# Función básica de extracción de características
 def extractKmers(T, training_data, k_min, k_max, features_min, features_max):
-	# Contains scores lists of different lengths of k
+	# Contiene listas de puntuaciones de diferentes longitudes de k
 	scores_list = []
-	# Contains list of k-mer for each iteration of rfe
+	# Contiene una lista de k-mer para cada iteración de rfe
 	supports_list = []
-	# List of different lengths of k-mer
+	# Lista de diferentes longitudes de k-mer
 	k_mers_range = range(k_min, k_max + 1)
-	# Classifier svm
+	# Clasificador svm
 	classifier = svm.SVC(kernel = 'linear', C = 1)
 
-	# Perform the analysis for the different sizes of k
+	# Realizar el análisis para los diferentes tamaños de k
 	for k in k_mers_range:
-		# Start feature extraction based on k-mers of length k
+		# Iniciar extracción de características basada en k-mers de longitud k
 		print("\nBeginning of the " + str(k) + "_mer(s) analysis")
 
-		# Generarte list of k-mer
+		# Generarte lista de k-mer
 		print("Generate K-mers...")
 		k_mers = K_mers.generate_K_mers(training_data, k)
 		
-		# Genrate matrice attributes and matrice class
+		# Generar atributos de matrices y clases de matrices
 		print("Generate matrices...")
 		X, y = Matrices.generateMatrice(training_data, k_mers, k)
 		y = numpy.asarray(y)
 
-		# Apply MinMaxScaler (0, 1)
+		# Aplicar MinMaxScaler (0, 1)
 		X = Preprocessing.minMaxScaling(X)
 
-		# If more than features_max  apply RFE (remove 10 % of features to remove at each iteration)
+		# Si hay más de features_max, aplique RFE (elimine el 10% de las características para eliminar en cada iteración)
 		if len(X[0]) > features_max:
 			print("Preliminary recursive feature elimination...")	
 			rfe = RFE(estimator = classifier, n_features_to_select = features_max, step = 0.1)
 			X = numpy.matrix(X)
 			X = rfe.fit_transform(X, y)
 
-			# Update list of k_mers
+			# Actualizar lista de k_mers
 			for i, value in enumerate(rfe.support_):
 				if value == False: k_mers[i] = None
 			k_mers = list(filter(lambda a: a != None, k_mers))
 
-		# Recursive feature elimination
+		# Eliminación de características recursivas
 		from RFE import RFE
 		print("Recursive feature elimination...")
 		rfe = RFE(estimator = classifier, n_features_to_select = 1, step = 1)
 		rfe.fit(X,y) 
 		
-		# Scores and supports of the actual iteration
+		# Puntajes y apoyos de la iteración actual 
 		scores = [] 
 		supports = []
 		
-		# Evaluation
+		# Evaluación
 		for i, supports_rfe in enumerate(rfe.supports):
 			# Variables
 			temp_index = []
 			temp_k_mers = []
 
-			# Print percentage of advancement
+			# Imprimir porcentaje de avance
 			print("\rFeature subset evaluation :", round((i + 1) / len(rfe.supports) * 100, 0), "%", end = '')
 
-			# Selects k-mers with support equal True
+			# Selecciona k-mers con soporte igual True
 			for j, support in enumerate(supports_rfe):
 				if rfe.supports[i][j] == True: temp_index.append(j)
 
-			# Replace the support by the k-mers 
+			# Reemplazar el soporte por los k-mers
 			for t in temp_index: temp_k_mers.append(k_mers[t])
 			rfe.supports[i] = temp_k_mers
 
-			# Evaluation method
+			# Método de evaluación
 			stratifiedKFold = StratifiedKFold(n_splits = 5, shuffle = False, random_state = None)
 			y_pred = cross_val_predict(classifier, X[:,temp_index], y, cv = stratifiedKFold, n_jobs = 4)
 			score = f1_score(y, y_pred, average = 'weighted')
 
-			# Save score and features of this iteration 
+			# Guardar la puntuación y las características de esta iteración
 			scores.append(score)
 			supports.append(rfe.supports[i])
 
-		# Save the list of scores and feature subsets for this length of k-mers 
+		# Guarde la lista de puntuaciones y subconjuntos de funciones para esta longitud de k-mers
 		scores_list.append(scores)
 		supports_list.append(supports)
 
-	# Changes the order of the lists for the graphic 
+	# Cambia el orden de las listas para el gráfico. 
 	for i, e in enumerate(scores_list):
 		scores_list[i].reverse()
 		supports_list[i].reverse()
 
-	# Identify solution
+	# Identificar solución
 	print("\n\nIdentify optimal solution...")
-	# Best score of the evaluations
+	# Mejor puntuación de las evaluaciones
 	best_score = 0
-	# Optimal score in relation with treshold
+	# Puntuación óptima en relación con el treshold
 	optimal_score = 0
-	# Best k-mer list
+	# Mejor lista de k-mer
 	extracted_k_mers = []
-	# Best length of k
+	# Mejor longitud de k
 	identified_k_length = 0
 
-	# Identify best solution
+	# Identificar la mejor solución
 	for i, s in enumerate(scores_list):
 		if max(s) > best_score:
 			best_score = max(s)
@@ -121,7 +121,7 @@ def extractKmers(T, training_data, k_min, k_max, features_min, features_max):
 				extracted_k_mers = supports_list[i][index]
 		else: pass
 
-	# Identify optimal solution
+	# Identificar la solución óptima
 	for i, l in enumerate(scores_list):
 		for j, s in enumerate(l):
 			if s >=  best_score * T and j <= index: 
@@ -132,7 +132,7 @@ def extractKmers(T, training_data, k_min, k_max, features_min, features_max):
 	if optimal_score == 0: optimal_score = best_score
 
 
-	# Save plot results
+	# Guardar los resultados del gráfico
 	fig = plt.figure(figsize = (12, 10) )
 	for i, s in enumerate(scores_list):
 		label = str(k_mers_range[i]) + "-mers"
@@ -146,10 +146,10 @@ def extractKmers(T, training_data, k_min, k_max, features_min, features_max):
 	fname = str("Output/Analysis.png")
 	plt.savefig(fname)
 
-	# Save extracted k-mers
+	# Guardar k-mers extraídos
 	f = open("Output/Kmers.txt", "w")
 	for i in extracted_k_mers: f.write(str(i) + "\n");
 	f.close()
 
-	# Return identified k-mers and their length
+	# Devuelve k-mers identificados y su longitud
 	return extracted_k_mers, identified_k_length
