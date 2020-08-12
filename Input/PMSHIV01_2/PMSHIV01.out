@@ -1,0 +1,428 @@
+Zero Weights processed. Default weights will be used
+GConf Error: Failed to contact configuration server; some possible causes are that you need to enable TCP/IP networking for ORBit, or you have stale NFS locks due to a system crash. See http://projects.gnome.org/gconf/ for information. (Details -  1: Not running within active session)
+*
+optimization finished, #iter = 36
+nu = 4.3593119301428336E-10
+obj = -8.717688779618755E-9, rho = 0.23107820057650255
+nSV = 15, nBSV = 0
+*
+optimization finished, #iter = 10
+nu = 5.885724050723563E-10
+obj = -4.413750754359424E-9, rho = 0.2268922366419774
+nSV = 7, nBSV = 0
+.*
+optimization finished, #iter = 53
+nu = 4.528117925280519E-10
+obj = -9.736660819275137E-9, rho = 1.2292678430893913
+nSV = 19, nBSV = 0
+*
+optimization finished, #iter = 32
+nu = 4.0073523550300794E-10
+obj = -6.612366269935053E-9, rho = -0.5252353339925725
+nSV = 14, nBSV = 0
+.*
+optimization finished, #iter = 82
+nu = 4.2005839602982924E-10
+obj = -1.2811577867856777E-8, rho = -1.6009589622485032
+nSV = 24, nBSV = 0
+*
+optimization finished, #iter = 23
+nu = 3.5499793002952486E-10
+obj = -6.389357042720049E-9, rho = 0.8535086472107788
+nSV = 11, nBSV = 0
+Total nSV = 49
+.*
+optimization finished, #iter = 38
+nu = 4.843501398855672E-10
+obj = -8.717689508713662E-9, rho = -0.2323862835328301
+nSV = 15, nBSV = 0
+.*
+optimization finished, #iter = 67
+nu = 4.6196614568934125E-10
+obj = -1.247312335806523E-8, rho = -1.4384384052612225
+nSV = 23, nBSV = 0
+.*
+optimization finished, #iter = 33
+nu = 4.408258785643913E-10
+obj = -6.612364340056591E-9, rho = -0.5243486128698523
+nSV = 14, nBSV = 0
+.*
+optimization finished, #iter = 53
+nu = 5.123818764908901E-10
+obj = -9.736497467076023E-9, rho = 1.2365614757961183
+nSV = 18, nBSV = 0
+.*
+optimization finished, #iter = 14
+nu = 6.305779653419183E-10
+obj = -4.413750960605866E-9, rho = 0.22531023384270418
+nSV = 7, nBSV = 0
+*
+optimization finished, #iter = 25
+nu = 3.993575164499259E-10
+obj = -6.389356424635545E-9, rho = -0.8530327567688222
+nSV = 11, nBSV = 0
+Total nSV = 47
+.*
+optimization finished, #iter = 88
+nu = 4.37587400682324E-10
+obj = -1.2033420675851735E-8, rho = -1.6618045619911346
+nSV = 23, nBSV = 0
+.*
+optimization finished, #iter = 44
+nu = 4.981437004342141E-10
+obj = -8.717688099396506E-9, rho = -0.23289656924736704
+nSV = 15, nBSV = 0
+.*
+optimization finished, #iter = 34
+nu = 4.4058896248690656E-10
+obj = -6.60799691795882E-9, rho = -0.49748894537754385
+nSV = 13, nBSV = 0
+.*
+optimization finished, #iter = 51
+nu = 5.109430619968177E-10
+obj = -9.707469289813836E-9, rho = -1.2352387646164524
+nSV = 17, nBSV = 0
+.*
+optimization finished, #iter = 34
+nu = 3.5653116679421573E-10
+obj = -5.8837781975504605E-9, rho = -0.7734784923668868
+nSV = 13, nBSV = 0
+.*
+optimization finished, #iter = 14
+nu = 6.791024339048354E-10
+obj = -4.413667353211595E-9, rho = 0.22507119654700825
+nSV = 7, nBSV = 0
+Total nSV = 46
+.*
+optimization finished, #iter = 67
+nu = 4.2588863990497076E-10
+obj = -1.1711807662476421E-8, rho = 1.0921006990091877
+nSV = 25, nBSV = 0
+*
+optimization finished, #iter = 18
+nu = 3.9478747673556675E-10
+obj = -6.316319614265502E-9, rho = -0.8136462085981548
+nSV = 9, nBSV = 0
+.*
+optimization finished, #iter = 62
+nu = 4.74183677682802E-10
+obj = -9.244663709842999E-9, rho = -1.0648389229572757
+nSV = 20, nBSV = 0
+.*
+optimization finished, #iter = 30
+nu = 4.534963598648649E-10
+obj = -6.576285808933917E-9, rho = -0.4667240214110969
+nSV = 14, nBSV = 0
+.*
+optimization finished, #iter = 36
+nu = 4.465862770693822E-10
+obj = -8.03738411063682E-9, rho = -0.6223794307135472
+nSV = 14, nBSV = 0
+.*
+optimization finished, #iter = 15
+nu = 6.784252767410062E-10
+obj = -4.409628042717835E-9, rho = -0.23078395896528933
+nSV = 6, nBSV = 0
+Total nSV = 46
+.*
+optimization finished, #iter = 38
+nu = 4.843625864935861E-10
+obj = -8.717686666638383E-9, rho = 0.2317705937136955
+nSV = 15, nBSV = 0
+.*
+optimization finished, #iter = 57
+nu = 4.710836907161903E-10
+obj = -9.186273521303769E-9, rho = 1.425990433743017
+nSV = 21, nBSV = 0
+.*
+optimization finished, #iter = 20
+nu = 6.277865898643488E-10
+obj = -4.0802070978615435E-9, rho = 0.017415924307158857
+nSV = 7, nBSV = 0
+.*
+optimization finished, #iter = 80
+nu = 4.6302036767626795E-10
+obj = -1.2733769220556847E-8, rho = -1.460149604739774
+nSV = 22, nBSV = 0
+.*
+optimization finished, #iter = 38
+nu = 4.401345208586063E-10
+obj = -6.381623607356378E-9, rho = -0.6930422817126265
+nSV = 14, nBSV = 0
+*
+optimization finished, #iter = 22
+nu = 3.912460683732254E-10
+obj = -6.259331846530337E-9, rho = -1.0653905281873124
+nSV = 9, nBSV = 0
+Total nSV = 47
+.*
+optimization finished, #iter = 47
+nu = 4.889839921265875E-10
+obj = -9.535222518280065E-9, rho = 1.5190072791334759
+nSV = 17, nBSV = 0
+*
+optimization finished, #iter = 28
+nu = 4.539493398622202E-10
+obj = -8.170465176502514E-9, rho = 0.7217917841735805
+nSV = 12, nBSV = 0
+.*
+optimization finished, #iter = 16
+nu = 6.426015696687431E-10
+obj = -4.177789906108636E-9, rho = 0.7353007819191372
+nSV = 8, nBSV = 0
+.*
+optimization finished, #iter = 81
+nu = 4.626668379870069E-10
+obj = -1.2723017949808373E-8, rho = 1.6190738809186072
+nSV = 23, nBSV = 0
+*
+optimization finished, #iter = 23
+nu = 3.978993301190612E-10
+obj = -6.365392642750761E-9, rho = -0.7096086038635763
+nSV = 9, nBSV = 0
+*
+optimization finished, #iter = 25
+nu = 4.492694228753281E-10
+obj = -6.515308896544739E-9, rho = -0.3105964755572788
+nSV = 12, nBSV = 0
+Total nSV = 45
+.*
+optimization finished, #iter = 73
+nu = 4.6252652173869494E-10
+obj = -1.2718738495650822E-8, rho = 1.471101331049146
+nSV = 22, nBSV = 0
+.*
+optimization finished, #iter = 43
+nu = 4.909445943562933E-10
+obj = -9.572601925283653E-9, rho = -1.237284598272438
+nSV = 16, nBSV = 0
+*
+optimization finished, #iter = 23
+nu = 3.9939631993977017E-10
+obj = -6.3893574673023345E-9, rho = -0.853309723007342
+nSV = 11, nBSV = 0
+*
+optimization finished, #iter = 31
+nu = 4.819156268334784E-10
+obj = -8.674356048086153E-9, rho = -0.3203022695494228
+nSV = 14, nBSV = 0
+.*
+optimization finished, #iter = 31
+nu = 4.3354705254603753E-10
+obj = -6.285999717239037E-9, rho = -0.6705502498329712
+nSV = 13, nBSV = 0
+*
+optimization finished, #iter = 10
+nu = 6.791220058527188E-10
+obj = -4.413750754359424E-9, rho = 0.22689223664197744
+nSV = 7, nBSV = 0
+Total nSV = 45
+.*
+optimization finished, #iter = 63
+nu = 4.925711108371153E-10
+obj = -9.60537747729846E-9, rho = 1.1152844053653863
+nSV = 20, nBSV = 0
+.*
+optimization finished, #iter = 14
+nu = 6.305779653419183E-10
+obj = -4.4137509606058665E-9, rho = 0.22531023384270418
+nSV = 7, nBSV = 0
+*
+optimization finished, #iter = 34
+nu = 4.843092487352882E-10
+obj = -8.71768880233748E-9, rho = 0.23262406312928338
+nSV = 15, nBSV = 0
+*
+optimization finished, #iter = 23
+nu = 3.781143693122442E-10
+obj = -6.237819140878955E-9, rho = -0.8579587001423022
+nSV = 9, nBSV = 0
+.*
+optimization finished, #iter = 68
+nu = 4.5658209116633267E-10
+obj = -1.2557101205203982E-8, rho = 1.598873505639428
+nSV = 21, nBSV = 0
+*
+optimization finished, #iter = 27
+nu = 4.394534464681388E-10
+obj = -6.591726953779188E-9, rho = 0.42049003216351255
+nSV = 12, nBSV = 0
+Total nSV = 44
+*
+optimization finished, #iter = 27
+nu = 3.872464208282813E-10
+obj = -6.3893582814511045E-9, rho = -0.8538488798875314
+nSV = 11, nBSV = 0
+.*
+optimization finished, #iter = 75
+nu = 4.4537450810861696E-10
+obj = -1.2247818161069722E-8, rho = 1.508597086396193
+nSV = 23, nBSV = 0
+.*
+optimization finished, #iter = 49
+nu = 4.82178812137164E-10
+obj = -9.401993028907216E-9, rho = -0.9193482537313417
+nSV = 20, nBSV = 0
+.*
+optimization finished, #iter = 33
+nu = 4.4078828386298736E-10
+obj = -6.61236734046687E-9, rho = 0.5255405024154312
+nSV = 14, nBSV = 0
+.*
+optimization finished, #iter = 15
+nu = 6.295807483333062E-10
+obj = -4.406843418943302E-9, rho = -0.19695615777849362
+nSV = 6, nBSV = 0
+.*
+optimization finished, #iter = 36
+nu = 4.545710184327852E-10
+obj = -8.183376253031954E-9, rho = 0.17680271705002193
+nSV = 15, nBSV = 0
+Total nSV = 47
+.*
+optimization finished, #iter = 69
+nu = 4.658421554675684E-10
+obj = -1.2809533252227334E-8, rho = -1.596735424726688
+nSV = 23, nBSV = 0
+*
+optimization finished, #iter = 29
+nu = 4.3315861853163673E-10
+obj = -6.495595150657702E-9, rho = -0.583126185285678
+nSV = 13, nBSV = 0
+*
+optimization finished, #iter = 27
+nu = 4.410872846567528E-10
+obj = -7.939168066072335E-9, rho = -0.25224655374148724
+nSV = 12, nBSV = 0
+*
+optimization finished, #iter = 25
+nu = 3.872557735272009E-10
+obj = -6.389356424635544E-9, rho = -0.8530327567688221
+nSV = 11, nBSV = 0
+.*
+optimization finished, #iter = 41
+nu = 4.954771269325132E-10
+obj = -9.661424200262053E-9, rho = -1.151067379029211
+nSV = 16, nBSV = 0
+.*
+optimization finished, #iter = 16
+nu = 5.954631658264905E-10
+obj = -4.1688695267951045E-9, rho = -0.19681296935146622
+nSV = 7, nBSV = 0
+Total nSV = 45
+.*
+optimization finished, #iter = 35
+nu = 4.1784768783175205E-10
+obj = -6.477617108665277E-9, rho = -0.5017071708141406
+nSV = 15, nBSV = 0
+.*
+optimization finished, #iter = 69
+nu = 4.525722961030209E-10
+obj = -1.2445477047348022E-8, rho = -1.6880439882793876
+nSV = 24, nBSV = 0
+.*
+optimization finished, #iter = 37
+nu = 4.538961875217508E-10
+obj = -8.396580410768794E-9, rho = -0.06677512251469023
+nSV = 15, nBSV = 0
+*
+optimization finished, #iter = 22
+nu = 3.9801754671781354E-10
+obj = -6.368794692431502E-9, rho = 0.8538291728391219
+nSV = 10, nBSV = 0
+.*
+optimization finished, #iter = 15
+nu = 6.306003181500257E-10
+obj = -4.413751423210098E-9, rho = -0.2260621162457773
+nSV = 7, nBSV = 0
+.*
+optimization finished, #iter = 39
+nu = 5.077615051617759E-10
+obj = -9.647768745837352E-9, rho = -1.198552307880564
+nSV = 15, nBSV = 0
+Total nSV = 48
+
+Options: -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/rflp/weka-3-7-12 -seed 1 
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          76              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+K&B Relative Info Score               7451.1861 %
+K&B Information Score                  128.0238 bits      1.6845 bits/instance
+Class complexity | order 0             128.0238 bits      1.6845 bits/instance
+Class complexity | scheme                0      bits      0      bits/instance
+Complexity improvement     (Sf)        128.0238 bits      1.6845 bits/instance
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      25      %
+Total Number of Instances               76     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_M
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_N
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_O
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_P
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 32  0  0  0 |  a = HIV1_M
+  0 11  0  0 |  b = HIV1_N
+  0  0 29  0 |  c = HIV1_O
+  0  0  0  4 |  d = HIV1_P
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          76              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+K&B Relative Info Score               7435.9929 %
+K&B Information Score                  129.0669 bits      1.6982 bits/instance
+Class complexity | order 0             129.0669 bits      1.6982 bits/instance
+Class complexity | scheme                0      bits      0      bits/instance
+Complexity improvement     (Sf)        129.0669 bits      1.6982 bits/instance
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      25      %
+Total Number of Instances               76     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_M
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_N
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_O
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     HIV1_P
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 32  0  0  0 |  a = HIV1_M
+  0 11  0  0 |  b = HIV1_N
+  0  0 29  0 |  c = HIV1_O
+  0  0  0  4 |  d = HIV1_P
+
+#### 2016-04-10 17:35 ####
