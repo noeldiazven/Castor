@@ -8,7 +8,7 @@
 ### Descripción
  CASTOR-KRFE es un método sin alineación que extrae características discriminantes de longitud óptima a partir de secuencias genómicas. Construye un modelo de predicción con una evaluación de éste. El modelo se puede utilizar para realizar la predicción de nuevas secuencias.
 
-### Softwares requeridos
+### Software requerido
 * [python](https://www.python.org/downloads/) 
 * [scikit-learn](https://scikit-learn.org/stable/install.html) 
 * [numpy](https://numpy.org/install/)
